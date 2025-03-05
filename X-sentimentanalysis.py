@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 
 nltk.download('vader_lexicon')
 
-consumerKey = "***REMOVED***"
-consumerSecret = "***REMOVED***"
-accessToken = "***REMOVED***"
-accessTokenSecret = "***REMOVED***"
+consumerKey = ""
+consumerSecret = ""
+accessToken = "-"
+accessTokenSecret = ""
 
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)

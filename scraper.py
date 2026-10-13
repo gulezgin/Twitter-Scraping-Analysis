@@ -66,9 +66,9 @@ async def authenticate(cookies_file: Path) -> Client:
         return client
 
     load_dotenv()
-    username = os.getenv('X_USERNAME')
-    email = os.getenv('X_EMAIL')
-    password = os.getenv('X_PASSWORD')
+    username = os.getenv('X_USERNAME', '').strip()
+    email = os.getenv('X_EMAIL', '').strip() or None
+    password = os.getenv('X_PASSWORD', '').strip()
     if not username or not password:
         sys.exit(
             f'{cookies_file} bulunamadı ve X_USERNAME / X_PASSWORD tanımlı değil. '

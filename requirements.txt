@@ -1,0 +1,6 @@
+twikit==2.3.3
+python-dotenv>=1.0
+pandas>=2.0
+matplotlib>=3.8
+transformers>=4.40,<5
+torch>=2.2

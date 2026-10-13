@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Proje: oturum bilgileri ve toplanan veriler
+cookies.json
+config.ini
+*.csv
+*.png
